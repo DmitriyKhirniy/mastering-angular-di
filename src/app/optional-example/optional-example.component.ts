@@ -10,7 +10,7 @@ export class OptionalExampleComponent implements OnInit {
 
   value: string;
 
-  constructor(private service: OptionalExampleService) {}
+  constructor(@Optional() private service: OptionalExampleService) {}
 
   ngOnInit(): void {
     this.value = this.service.getValue();
